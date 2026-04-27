@@ -7,8 +7,13 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   
   // Note: For Metadata in Server Components, we need to create a fresh Supabase client
   // using standard keys since it's a generic fetch, not auth-bound.
-  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL!
-  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  const supabaseUrl = process.env.NEXT_PUBLIC_SUPABASE_URL
+  const supabaseKey = process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY
+
+  if (!supabaseUrl || !supabaseKey) {
+    return { title: 'VipBooker | VIP Transfer' }
+  }
+
   const supabase = createClient(supabaseUrl, supabaseKey)
 
   const { data } = await supabase
