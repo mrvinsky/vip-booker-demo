@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# VipBooker | VIP Transfer & Tour Booking Platform 🏎️💨
 
-## Getting Started
+VipBooker is a premium, high-performance web application designed for VIP transportation services, agency management, and tour bookings. Built with the latest tech stack, it provides a seamless experience for both customers and service providers.
 
-First, run the development server:
+## ✨ Key Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 👤 Customer Dashboard
+- Real-time booking tracking.
+- Past and active reservation management.
+- Transparent status updates (Pending Deposit, Confirmed, Cancelled).
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### 🔍 Advanced Search Engine
+- Dynamic filtering by City, Date, and Passenger Capacity.
+- High-performance search powered by Supabase.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### 🏢 Agency & Driver Management (Umbrella System)
+- Role-Based Access Control (RBAC).
+- Agencies can manage their own fleet and view their specific bookings.
+- Administrative dashboard for platform-wide management.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 🗺️ Tour Modules
+- Exclusive tour packages (e.g., Cappadocia Balloon Tour, Antalya Waterfalls).
+- Detailed tour descriptions and agency contact integration.
 
-## Learn More
+### ⚡ Technical Excellence
+- **Speed:** Next.js 15+ with Turbopack for lightning-fast builds.
+- **SEO:** Dynamic Metadata generation for high social media visibility.
+- **Performance:** Optimized images using `next/image` with modern remote patterns.
+- **Design:** Premium dark-themed UI using Tailwind CSS and Framer Motion for smooth animations.
 
-To learn more about Next.js, take a look at the following resources:
+## 🛠️ Tech Stack
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- **Framework:** [Next.js](https://nextjs.org/) (App Router)
+- **Database & Auth:** [Supabase](https://supabase.com/)
+- **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+- **Animations:** [Framer Motion](https://www.framer.com/motion/)
+- **Icons:** [Lucide React](https://lucide.dev/)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## 🚀 Getting Started
 
-## Deploy on Vercel
+### Prerequisites
+- Node.js 18+
+- Supabase Account
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Installation
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/mrvinsky/vip-booker-demo.git
+   cd vip-booker-demo
+   ```
+
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+
+3. Set up environment variables:
+   Create a `.env.local` file in the root directory:
+   ```env
+   NEXT_PUBLIC_SUPABASE_URL=your_supabase_url
+   NEXT_PUBLIC_SUPABASE_ANON_KEY=your_supabase_anon_key
+   ```
+
+4. Run the development server:
+   ```bash
+   npm run dev
+   ```
+
+## 🌐 Deployment
+
+This project is optimized for [Vercel](https://vercel.com).
+- Ensure environment variables are set in the Vercel Project Settings.
+- The build process is automated via GitHub integration.
+
+---
+
+Built with ❤️ by [Vinsky](https://github.com/mrvinsky)
